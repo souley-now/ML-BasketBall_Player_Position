@@ -5,7 +5,7 @@ from flask import Flask, request, jsonify
 import pickle
 
 # Load data
-data = pd.read_csv('nba-player-stats-2021.csv')
+data = pd.read_csv('../nba-player-stats-2021.csv')
 
 # Handle missing values and duplicates
 data = data.dropna().drop_duplicates()
